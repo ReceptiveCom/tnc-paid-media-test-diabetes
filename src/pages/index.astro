@@ -1,0 +1,538 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Your Diabetes Dietitian | Covered by Insurance | Top Nutrition Coaching">
+  <Fragment slot="head">
+    <meta name="description" content="Work with a Registered Dietitian who specializes in diabetes. Personalized plans based on your lab results. $0 with most insurance. Check your coverage in 60 seconds." />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </Fragment>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Just got your lab results?</div>
+        <h1>Your Diabetes Dietitian. <em>Covered by Insurance.</em></h1>
+        <p class="hero-sub">$0 with most insurance. Medical Nutrition Therapy for diabetes is a covered benefit.</p>
+        <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+          Check Your Insurance <span class="cta-arrow">&rarr;</span>
+        </a>
+        <div class="cta-micro">Takes 60 seconds &middot; No credit card required</div>
+        <div class="hero-trust-line">
+          <a href="https://www.trustpilot.com/review/topnutritioncoaching.com" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+            <svg width="80" height="14" viewBox="0 0 80 14" fill="none"><path d="M7 0L8.6 4.8H13.6L9.5 7.8L11.1 12.6L7 9.6L2.9 12.6L4.5 7.8L0.4 4.8H5.4L7 0Z" fill="#F4B400"/><path d="M23 0L24.6 4.8H29.6L25.5 7.8L27.1 12.6L23 9.6L18.9 12.6L20.5 7.8L16.4 4.8H21.4L23 0Z" fill="#F4B400"/><path d="M39 0L40.6 4.8H45.6L41.5 7.8L43.1 12.6L39 9.6L34.9 12.6L36.5 7.8L32.4 4.8H37.4L39 0Z" fill="#F4B400"/><path d="M55 0L56.6 4.8H61.6L57.5 7.8L59.1 12.6L55 9.6L50.9 12.6L52.5 7.8L48.4 4.8H53.4L55 0Z" fill="#F4B400"/><path d="M71 0L72.6 4.8H77.6L73.5 7.8L75.1 12.6L71 9.6L66.9 12.6L68.5 7.8L64.4 4.8H69.4L71 0Z" fill="#F4B400"/></svg>
+            <span style="font-family:var(--body);font-size:13px;color:rgba(255,255,255,.55);">4.8 &middot; Rated on Trustpilot</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <picture>
+          <source media="(max-width: 640px)" srcset="tnc-diabetes-images/hero-consultation-mobile.jpg">
+          <img src="tnc-diabetes-images/hero-consultation.jpg" alt="Registered Dietitian on a virtual consultation" loading="eager">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSURANCE BAR ===== -->
+  <div class="insurance-bar">
+    <div class="insurance-bar-inner">
+      <div class="insurance-bar-label">Covered by most major insurance providers</div>
+      <div class="insurance-logos">
+        <img src="tnc-diabetes-images/logo-aetna.svg" alt="Aetna">
+        <img src="tnc-diabetes-images/logo-anthem.svg" alt="Anthem">
+        <img src="tnc-diabetes-images/logo-bcbs.svg" alt="Blue Cross Blue Shield">
+        <img src="tnc-diabetes-images/logo-cigna.svg" alt="Cigna">
+        <img src="tnc-diabetes-images/logo-unitedhealthcare.svg" alt="UnitedHealthcare">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CLINICAL STAT ===== -->
+  <section class="section fade-up">
+    <div class="stat-section">
+      <div>
+        <div class="section-eyebrow">Evidence-based results</div>
+        <p class="stat-description" style="margin-bottom:24px;">Your doctor said change your diet but didn't say how. A Registered Dietitian who specializes in diabetes reviews your labs and builds a plan around your A1C.</p>
+        <div class="stat-number">0.3&ndash;2.0%</div>
+        <div class="stat-unit">A1C reduction with Medical Nutrition Therapy</div>
+        <p class="stat-description">The American Diabetes Association recommends individualized Medical Nutrition Therapy delivered by a Registered Dietitian for everyone with type 2 diabetes. Your dietitian reviews your labs and builds a carb-distribution plan specific to your A1C level.</p>
+        <p class="stat-source">ADA Standards of Care, 2026. Individual results may vary.</p>
+        <div style="margin-top:32px">
+          <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+            Check Your Insurance <span class="cta-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+      <div class="stat-image">
+        <img src="tnc-diabetes-images/lab-results.jpg" alt="Lab results showing A1C and blood glucose levels" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <div class="section-full section-mint">
+    <section class="section fade-up" style="padding-top:96px;padding-bottom:96px;">
+      <div class="section-eyebrow">Built for people managing Type 2 diabetes &mdash; not a general nutrition platform</div>
+      <div class="section-title">Three steps. See a diabetes RD soon.</div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <img src="tnc-diabetes-images/step-1-insurance.jpg" alt="Insurance selection screen" class="step-img" loading="lazy">
+          <div class="step-num">1</div>
+          <div class="step-title">Check your insurance</div>
+          <p class="step-desc">Takes 60 seconds. Most commercial plans and Medicare cover Medical Nutrition Therapy for diabetes at $0 out of pocket.</p>
+        </div>
+        <div class="step-card">
+          <img src="tnc-diabetes-images/step-2-match-dietitian.jpg" alt="Being matched with a Registered Dietitian" class="step-img" loading="lazy">
+          <div class="step-num">2</div>
+          <div class="step-title">Get matched with a diabetes RD</div>
+          <p class="step-desc">We pair you with a Registered Dietitian who specializes in diabetes management, A1C optimization, and carb distribution.</p>
+        </div>
+        <div class="step-card">
+          <img src="tnc-diabetes-images/step-3-virtual-consultation.jpg" alt="Virtual consultation with a dietitian" class="step-img" loading="lazy">
+          <div class="step-num">3</div>
+          <div class="step-title">Start your personalized plan</div>
+          <p class="step-desc">Your RD reviews your lab results, coordinates with your doctor, and creates an eating plan built around your specific numbers.</p>
+          <p style="font-family:var(--body);font-size:13px;font-weight:600;color:var(--forest);margin-top:12px;">Most members see their RD within a week of checking insurance.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;">
+        <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+          Check Your Insurance <span class="cta-arrow">&rarr;</span>
+        </a>
+        <div class="cta-micro">Takes 60 seconds &middot; No credit card required &middot; Most members pay $0</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== WHAT YOUR RD DOES ===== -->
+  <section class="section fade-up">
+    <div class="section-eyebrow">What your diabetes RD does</div>
+    <div class="section-title">The depth your doctor's visit doesn't have time for.</div>
+    <p class="section-body" style="margin-bottom:8px;">Your PCP told you to change your diet. Your Registered Dietitian shows you exactly how.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C4A36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="benefit-title">Lab-based meal planning</div>
+        <p class="benefit-desc">Your RD reviews your A1C, fasting glucose, and lipid panel and translates them into a specific eating framework. Not generic advice. A plan built on your numbers.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C4A36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="benefit-title">Carb distribution for your A1C</div>
+        <p class="benefit-desc">Not just "eat fewer carbs." Your RD builds a carb-distribution plan using glycemic index, carb counting, and meal timing around your medication schedule to target glucose stability.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C4A36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="benefit-title">Ongoing monitoring and adjustments</div>
+        <p class="benefit-desc">Your plan evolves with your labs. Pre-bloodwork prep, post-lab A1C review, adjustments when medications change, and ongoing glucose pattern analysis. Your RD knows your whole history.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C4A36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="benefit-title">Nutrition alongside your medication</div>
+        <p class="benefit-desc">Your RD works with your treatment plan — whether you're on metformin, insulin, a GLP-1, or exploring options with your doctor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <div class="section-full section-card-bg">
+    <section class="section fade-up" style="padding-top:96px;padding-bottom:96px;">
+      <div class="section-eyebrow">Real results</div>
+      <div class="section-title">Members managing diabetes with their RD.</div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars"><svg width="88" height="16" viewBox="0 0 88 16" fill="none"><path d="M8 0L9.8 5.5H15.6L10.9 9L12.7 14.5L8 11L3.3 14.5L5.1 9L0.4 5.5H6.2L8 0Z" fill="#F4B400"/><path d="M26 0L27.8 5.5H33.6L28.9 9L30.7 14.5L26 11L21.3 14.5L23.1 9L18.4 5.5H24.2L26 0Z" fill="#F4B400"/><path d="M44 0L45.8 5.5H51.6L46.9 9L48.7 14.5L44 11L39.3 14.5L41.1 9L36.4 5.5H42.2L44 0Z" fill="#F4B400"/><path d="M62 0L63.8 5.5H69.6L64.9 9L66.7 14.5L62 11L57.3 14.5L59.1 9L54.4 5.5H60.2L62 0Z" fill="#F4B400"/><path d="M80 0L81.8 5.5H87.6L82.9 9L84.7 14.5L80 11L75.3 14.5L77.1 9L72.4 5.5H78.2L80 0Z" fill="#F4B400"/></svg></div>
+          <p class="review-text">"Emma has been a total game changer for the family. Helped bust through the overwhelm of managing diabetes. Husband lost 40 pounds and brought A1C down from over 12 to 7 within a few months following her simple, realistic instructions."</p>
+          <div class="review-attr"><span>&#10003;</span> Carlyn A. &middot; Verified Review</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><svg width="88" height="16" viewBox="0 0 88 16" fill="none"><path d="M8 0L9.8 5.5H15.6L10.9 9L12.7 14.5L8 11L3.3 14.5L5.1 9L0.4 5.5H6.2L8 0Z" fill="#F4B400"/><path d="M26 0L27.8 5.5H33.6L28.9 9L30.7 14.5L26 11L21.3 14.5L23.1 9L18.4 5.5H24.2L26 0Z" fill="#F4B400"/><path d="M44 0L45.8 5.5H51.6L46.9 9L48.7 14.5L44 11L39.3 14.5L41.1 9L36.4 5.5H42.2L44 0Z" fill="#F4B400"/><path d="M62 0L63.8 5.5H69.6L64.9 9L66.7 14.5L62 11L57.3 14.5L59.1 9L54.4 5.5H60.2L62 0Z" fill="#F4B400"/><path d="M80 0L81.8 5.5H87.6L82.9 9L84.7 14.5L80 11L75.3 14.5L77.1 9L72.4 5.5H78.2L80 0Z" fill="#F4B400"/></svg></div>
+          <p class="review-text">"Age 76, working weekly with Joanne Tippin who researches questions about macronutrients, food choices, exercise, and lab results. Goal is maximizing longevity and quality of life. Rates nutritional advice 5 out of 5."</p>
+          <div class="review-attr"><span>&#10003;</span> Jonathan A. &middot; Verified Review</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><svg width="88" height="16" viewBox="0 0 88 16" fill="none"><path d="M8 0L9.8 5.5H15.6L10.9 9L12.7 14.5L8 11L3.3 14.5L5.1 9L0.4 5.5H6.2L8 0Z" fill="#F4B400"/><path d="M26 0L27.8 5.5H33.6L28.9 9L30.7 14.5L26 11L21.3 14.5L23.1 9L18.4 5.5H24.2L26 0Z" fill="#F4B400"/><path d="M44 0L45.8 5.5H51.6L46.9 9L48.7 14.5L44 11L39.3 14.5L41.1 9L36.4 5.5H42.2L44 0Z" fill="#F4B400"/><path d="M62 0L63.8 5.5H69.6L64.9 9L66.7 14.5L62 11L57.3 14.5L59.1 9L54.4 5.5H60.2L62 0Z" fill="#F4B400"/><path d="M80 0L81.8 5.5H87.6L82.9 9L84.7 14.5L80 11L75.3 14.5L77.1 9L72.4 5.5H78.2L80 0Z" fill="#F4B400"/></svg></div>
+          <p class="review-text">"Colette helped improve my diet. I no longer go to sleep hungry. She helped me balance my blood sugar and I feel so much better day to day."</p>
+          <div class="review-attr"><span>&#10003;</span> Uma A. &middot; Verified Review</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:16px;">
+        <p style="font-size:13px;color:var(--text-dim);">Rated 4.8 out of 5 &middot; Trustpilot &amp; Verified Reviews</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== RD PROFILES ===== -->
+  <section class="section fade-up">
+    <div class="section-eyebrow">Your care team</div>
+    <div class="section-title">Registered Dietitians who specialize in diabetes.</div>
+    <p class="section-body">Every RD in our diabetes program holds national RD credentials, verified clinical experience, and a track record of helping clients with A1C management and Medical Nutrition Therapy.</p>
+    <div class="rd-grid">
+      <div class="rd-card">
+        <img src="tnc-diabetes-images/luciana-ambrosi.jpg" alt="Luciana Ambrosi, MS, RDN, LDN" class="rd-photo" loading="lazy">
+        <div class="rd-info">
+          <div class="rd-name">Luciana Ambrosi, MS, RDN, LDN</div>
+          <div class="rd-creds">Licensed Registered Dietitian Nutritionist &middot; Columbia University</div>
+          <div class="rd-specialties">
+            <span class="rd-tag">Diabetes</span>
+            <span class="rd-tag">Prediabetes</span>
+            <span class="rd-tag">Insulin-Dependent</span>
+          </div>
+          <p class="rd-bio">Master's in Nutrition and Public Health from Columbia University with over 10 years specializing in diabetes, including Type 1, Type 2, and prediabetes. Structured, direct, and personalized approach. Fluent in English and Spanish. 287 reviews, rated 4.8/5.</p>
+        </div>
+      </div>
+      <div class="rd-card">
+        <img src="tnc-diabetes-images/michelle-rodgers.jpeg" alt="Michelle Rodgers, RD" class="rd-photo" loading="lazy">
+        <div class="rd-info">
+          <div class="rd-name">Michelle Rodgers, RD</div>
+          <div class="rd-creds">Licensed Registered Dietitian &middot; 20 Years Experience</div>
+          <div class="rd-specialties">
+            <span class="rd-tag">Blood Sugar</span>
+            <span class="rd-tag">Heart Health</span>
+            <span class="rd-tag">Metabolic Health</span>
+          </div>
+          <p class="rd-bio">With 20 years of clinical experience, Michelle specializes in nutrition for chronic conditions including blood sugar management, heart health, and metabolic wellness. Her whole-person approach addresses eating, exercise, stress, and sleep. 238 reviews, rated 4.7/5.</p>
+        </div>
+      </div>
+      <div class="rd-card">
+        <img src="tnc-diabetes-images/kelsey-schmitt.jpg" alt="Kelsey Schmitt, RD, LD" class="rd-photo" loading="lazy">
+        <div class="rd-info">
+          <div class="rd-name">Kelsey Schmitt, RD, LD</div>
+          <div class="rd-creds">Licensed Registered Dietitian &middot; 10 Years Experience</div>
+          <div class="rd-specialties">
+            <span class="rd-tag">Metabolic Health</span>
+            <span class="rd-tag">Hormonal Balance</span>
+            <span class="rd-tag">Evidence-Based</span>
+          </div>
+          <p class="rd-bio">Over 10 years of clinical experience in metabolic health, hormonal balance, and evidence-based nutrition. Client-centered approach that builds flexible plans around the food you actually eat rather than rigid rules. 42 reviews, rated 4.8/5.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <div class="section-full section-mint">
+    <section class="section fade-up" style="padding-top:96px;padding-bottom:96px;">
+      <div class="section-eyebrow">Common questions</div>
+      <div class="section-title">Before you check your insurance.</div>
+      <p class="section-body" style="margin-bottom:40px;">Most commercial insurance and Medicare cover Medical Nutrition Therapy for diabetes at no cost to you.</p>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does my insurance cover a dietitian for diabetes?</div>
+          <div class="faq-a">Most commercial insurance plans (Aetna, Cigna, Blue Cross Blue Shield, UnitedHealthcare, Anthem) and Medicare cover Medical Nutrition Therapy for diabetes. It takes 60 seconds to check. Most of our members with diabetes pay $0 out of pocket.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How is this different from what my doctor tells me?</div>
+          <div class="faq-a">Your doctor diagnosed the problem. Your Registered Dietitian gives you the plan. A typical PCP visit is 10 minutes. Your RD spends a full session reviewing your lab results, building a meal framework based on your A1C, and creating a plan that fits the food you actually eat at home.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will my dietitian specialize in diabetes?</div>
+          <div class="faq-a">Yes. We match you with an RD who has verified experience in diabetes management, A1C optimization, and carb distribution. They understand glycemic index, medication-nutrition interactions, and complication-specific nutrition. This is not a generalist.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do virtual sessions work?</div>
+          <div class="faq-a">All sessions happen over video from your home. Your RD reviews your labs before the session, discusses your meals and medications during, and sends your plan after. Most members book their first session within a few days of checking insurance.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can nutrition really improve my A1C?</div>
+          <div class="faq-a">According to the American Diabetes Association, Medical Nutrition Therapy delivered by a Registered Dietitian is associated with A1C reductions of 0.3 to 2.0 percent for people with type 2 diabetes. The ADA recommends individualized MNT at diagnosis and throughout the lifespan. Individual results vary.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I don't have insurance?</div>
+          <div class="faq-a">Self-pay sessions are available at $59 per week. Many members find that the clinical depth of working with a diabetes-specialized RD produces measurable A1C improvements that justify the investment. Check your insurance first though. You may be covered at $0.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="section-eyebrow" style="color:rgba(255,255,255,.5);">Ready to start</div>
+    <div class="section-title">Your A1C. Your labs. Your plan.</div>
+    <p class="section-body">Your RD reviews your labs and builds a plan around your A1C.</p>
+    <p style="font-family:var(--body);font-size:15px;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:24px;">First sessions available this week.</p>
+    <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+      Check Your Insurance <span class="cta-arrow">&rarr;</span>
+    </a>
+    <div class="cta-micro">Free to check &middot; No commitment &middot; Most members pay $0</div>
+  </section>
+
+  <!-- ===== DISCLAIMER ===== -->
+  <div class="disclaimer">
+    Coverage varies by insurance plan and state. Individual results may vary. Medical Nutrition Therapy outcomes cited from ADA Standards of Care (2026). Top Nutrition Coaching Registered Dietitians work alongside your medical team and do not replace medical treatment. Always consult your doctor about medication changes.
+  </div>
+
+  <!-- ===== MOBILE STICKY CTA ===== -->
+  <div class="sticky-cta">
+    <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+      Check Your Insurance <span class="cta-arrow">&rarr;</span>
+    </a>
+  </div>
+</Layout>
+
+<style is:global>
+:root {
+  --forest: #1C4A36;
+  --forest-pale: rgba(28,74,54,.06);
+  --sapien: #547666;
+  --leaf: #58AD5A;
+  --mint: #F0F9F5;
+  --bloom: #FF5C3B;
+  --bloom-hover: #E84D2E;
+  --black: #08120A;
+  --text: #08120A;
+  --text-muted: rgba(8,18,10,.60);
+  --text-dim: rgba(8,18,10,.40);
+  --bg-card: #F5F5F1;
+  --border: rgba(8,18,10,.08);
+  --white: #FFFFFF;
+  --heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--body); color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--bloom); color: #fff;
+  font-family: var(--body); font-size: 17px; font-weight: 600;
+  padding: 18px 48px; border-radius: 16px;
+  transition: background .2s, transform .15s;
+  cursor: pointer; border: none;
+  line-height: 1;
+}
+.cta-btn:hover { background: var(--bloom-hover); transform: translateY(-1px); }
+.cta-btn:active { transform: translateY(0); }
+.cta-arrow { display: inline-block; transition: transform .2s; }
+.cta-btn:hover .cta-arrow { transform: translateX(4px); }
+.cta-micro {
+  font-family: var(--body); font-size: 14px; color: var(--sapien);
+  margin-top: 8px; letter-spacing: 0.01em;
+}
+.hero-trust-line { margin-top: 4px; }
+
+/* ===== HERO ===== */
+.hero { background: var(--forest); overflow: hidden; }
+.hero-inner {
+  max-width: 1200px; width: 100%;
+  margin: 0 auto; padding: 80px 40px 40px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 32px; align-items: center;
+}
+.hero-content { padding-bottom: 0; }
+.hero-image-wrap {
+  position: relative;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 20px; padding: 6px; overflow: hidden;
+  box-shadow: 0 4px 24px rgba(28,74,54,.12), 0 16px 48px -8px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.06);
+}
+.hero-image-wrap img {
+  width: 100%; height: auto; display: block;
+  object-fit: cover; max-height: 600px; border-radius: 16px; overflow: hidden;
+}
+.hero-stat-pills { display: flex; gap: 12px; margin-top: 24px; }
+.hero-pill {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px; padding: 10px 16px;
+}
+.hero-pill-icon { width: 20px; height: 20px; flex-shrink: 0; }
+.hero-pill-text { font-family: var(--body); font-size: 13px; color: rgba(255,255,255,.8); font-weight: 500; }
+.hero-eyebrow {
+  font-family: var(--body); font-size: 13px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: rgba(255,255,255,.7); margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: var(--heading); font-size: 55px; font-weight: 600;
+  line-height: 1.08; color: #fff; letter-spacing: -1.5px;
+  max-width: 620px; margin-bottom: 16px;
+}
+.hero h1 em { font-style: italic; font-weight: 700; color: rgba(255,255,255,.85); }
+.hero-sub {
+  font-family: var(--body); font-size: 18px; font-weight: 400;
+  color: rgba(255,255,255,.85); max-width: 480px;
+  line-height: 1.65; margin-bottom: 24px;
+}
+.hero .cta-micro { color: var(--sapien); opacity: .7; font-size: 14px; }
+
+/* ===== INSURANCE BAR ===== */
+.insurance-bar { background: var(--mint); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px 40px; }
+.insurance-bar-inner { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.insurance-bar-label { font-family: var(--body); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); white-space: nowrap; }
+.insurance-logos { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; justify-content: center; }
+.insurance-logos img { height: 22px; width: auto; max-width: 110px; opacity: .65; transition: opacity .2s; display: block; object-fit: contain; }
+.insurance-logos img:hover { opacity: .85; }
+
+/* ===== SECTIONS ===== */
+.section { padding: 96px 40px; max-width: 1200px; margin: 0 auto; }
+.section-full { max-width: none; }
+.section-mint { background: var(--mint); }
+.section-forest { background: var(--forest); color: #fff; }
+.section-card-bg { background: var(--bg-card); }
+.section-eyebrow { font-family: var(--body); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--sapien); margin-bottom: 12px; }
+.section-title { font-family: var(--heading); font-size: 36px; font-weight: 800; color: var(--text); letter-spacing: -1px; line-height: 1.15; margin-bottom: 20px; }
+.section-body { font-family: var(--body); font-size: 16px; color: var(--text-muted); line-height: 1.7; max-width: 600px; }
+
+/* ===== CLINICAL STAT ===== */
+.stat-section { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.stat-number { font-family: var(--heading); font-size: 56px; font-weight: 800; color: var(--forest); letter-spacing: -2px; line-height: 1; margin-bottom: 8px; }
+.stat-unit { font-family: var(--body); font-size: 18px; font-weight: 600; color: var(--forest); margin-bottom: 16px; }
+.stat-description { font-family: var(--body); font-size: 15px; color: var(--text-muted); line-height: 1.7; max-width: 440px; }
+.stat-source { font-family: var(--body); font-size: 12px; color: var(--text-dim); margin-top: 16px; font-style: italic; }
+.stat-image { display: flex; justify-content: center; }
+.stat-image img { max-width: 380px; width: 100%; filter: drop-shadow(0 8px 32px rgba(28,74,54,.1)); }
+
+/* ===== HOW IT WORKS ===== */
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 48px; }
+.step-card { background: var(--white); border-radius: 12px; padding: 36px 28px; text-align: center; border: 1px solid var(--border); transition: box-shadow .3s; }
+.step-card:hover { box-shadow: 0 8px 32px rgba(28,74,54,.08); }
+.step-num { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--forest); color: #fff; font-family: var(--heading); font-size: 16px; font-weight: 700; margin-bottom: 20px; }
+.step-title { font-family: var(--heading); font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 10px; letter-spacing: -0.3px; }
+.step-desc { font-family: var(--body); font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+.step-img { width: 100%; height: 180px; object-fit: cover; object-position: center 20%; border-radius: 8px; margin-bottom: 20px; }
+
+/* ===== BENEFITS ===== */
+.benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.benefit-card { background: var(--white); border-radius: 12px; padding: 32px; border: 1px solid var(--border); }
+.benefit-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--forest-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.benefit-icon svg { width: 22px; height: 22px; }
+.benefit-title { font-family: var(--heading); font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; letter-spacing: -0.2px; }
+.benefit-desc { font-family: var(--body); font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+/* ===== REVIEWS ===== */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+.review-card { background: var(--white); border-radius: 12px; padding: 28px; border: 1px solid var(--border); display: flex; flex-direction: column; }
+.review-stars { margin-bottom: 16px; }
+.review-stars svg { height: 16px; }
+.review-text { font-family: var(--body); font-size: 15px; color: var(--text); line-height: 1.65; font-style: italic; flex: 1; margin-bottom: 16px; }
+.review-attr { font-family: var(--body); font-size: 13px; color: var(--text-dim); font-weight: 500; }
+.review-attr span { color: var(--leaf); margin-right: 4px; }
+
+/* ===== RD PROFILES ===== */
+.rd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+.rd-card { background: var(--white); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); transition: box-shadow .3s; }
+.rd-card:hover { box-shadow: 0 8px 32px rgba(28,74,54,.08); }
+.rd-photo { width: 100%; max-width: 200px; height: auto; aspect-ratio: 4/5; object-fit: cover; object-position: top center; display: block; margin: 24px auto 0; border-radius: 50%; }
+.rd-info { padding: 24px; }
+.rd-name { font-family: var(--heading); font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+.rd-creds { font-family: var(--body); font-size: 13px; color: var(--sapien); font-weight: 500; margin-bottom: 12px; }
+.rd-specialties { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.rd-tag { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; background: rgba(28,74,54,.06); color: var(--forest); }
+.rd-bio { font-family: var(--body); font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* ===== FAQ ===== */
+.faq-list { margin-top: 40px; max-width: 720px; }
+.faq-q { font-family: var(--heading); font-size: 17px; font-weight: 700; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-q::after { content: '+'; font-size: 22px; font-weight: 400; color: var(--text-dim); transition: transform .2s; }
+.faq-item.open .faq-q::after { content: '\2212'; }
+.faq-a { font-family: var(--body); font-size: 14px; color: var(--text-muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; padding-top: 0; }
+.faq-item.open .faq-a { max-height: 300px; padding-top: 14px; }
+
+/* ===== FINAL CTA ===== */
+.final-cta { text-align: center; padding: 96px 40px; background: var(--forest); }
+.final-cta .section-title { color: #fff; max-width: 600px; margin: 0 auto 12px; }
+.final-cta .section-body { color: rgba(255,255,255,.7); margin: 0 auto 36px; max-width: 480px; }
+.final-cta .cta-micro { color: rgba(255,255,255,.45); }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer { padding: 32px 40px; max-width: 1200px; margin: 0 auto; font-family: var(--body); font-size: 11px; color: var(--text-dim); line-height: 1.6; border-top: 1px solid var(--border); }
+
+/* ===== MOBILE STICKY CTA ===== */
+.sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-top: 1px solid var(--border); padding: 12px 20px; text-align: center; }
+.sticky-cta .cta-btn { width: 100%; justify-content: center; padding: 16px 24px; font-size: 16px; }
+.sticky-cta { opacity: 0; transform: translateY(20px); transition: opacity .4s ease, transform .4s ease; }
+.sticky-cta.active { opacity: 1; transform: translateY(0); }
+
+/* ===== ANIMATIONS ===== */
+.fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.fade-up.vis { opacity: 1; transform: translateY(0); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero h1 { font-size: 38px; }
+  .hero-inner { padding: 48px 24px 32px; grid-template-columns: 1fr; gap: 20px; }
+  .hero-content { padding-bottom: 0; }
+  .hero-image-wrap img { max-height: 380px; border-radius: 14px; object-fit: contain; }
+  .hero-image-wrap { padding: 5px; border-radius: 18px; }
+  .hero-stat-pills { flex-direction: column; }
+  .stat-section { grid-template-columns: 1fr; gap: 40px; }
+  .stat-image { order: -1; }
+  .steps-grid { grid-template-columns: 1fr; gap: 20px; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .rd-grid { grid-template-columns: 1fr; }
+  .section { padding: 64px 24px; }
+  .section-title { font-size: 28px; }
+  .insurance-bar { padding: 20px 24px; }
+  .insurance-bar-inner { gap: 16px; }
+  .insurance-logos { gap: 20px; }
+  .insurance-logos img { height: 18px; }
+  .stat-number { font-size: 44px; }
+}
+@media (max-width: 640px) {
+  .hero-inner { padding: 40px 20px 28px; gap: 16px; }
+  .hero h1 { font-size: 32px; letter-spacing: -1px; }
+  .hero-sub { font-size: 16px; margin-bottom: 20px; }
+  .hero-image-wrap img { max-height: 340px; object-fit: contain; }
+  .hero-image-wrap { padding: 4px; border-radius: 14px; }
+  .insurance-bar { padding: 20px 24px; }
+  .insurance-bar-inner { flex-direction: column; gap: 10px; }
+  .insurance-bar-label { font-size: 11px; letter-spacing: 0.06em; white-space: normal; text-align: center; }
+  .insurance-logos { gap: 12px; flex-wrap: nowrap; }
+  .insurance-logos img { height: 14px; max-width: 80px; }
+  .cta-btn { padding: 16px 32px; font-size: 16px; width: 100%; justify-content: center; }
+  .sticky-cta.active { display: block; }
+  body { padding-bottom: 72px; }
+  .final-cta { padding: 64px 24px; }
+  .stat-number { font-size: 40px; }
+}
+
+/* ── Webflow CSS/JS Overrides ─── */
+blockquote{background:transparent!important;border:none!important;padding:0!important;margin:0!important}
+main{margin-top:0!important}
+.faq-item{display:block!important;background:transparent!important;padding:24px 0!important;border-radius:0!important;margin:0!important}
+</style>
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function() {
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('vis');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(function(el) { io.observe(el); });
+
+  var heroCta = document.querySelector('.hero .cta-btn');
+  var stickyCta = document.querySelector('.sticky-cta');
+  if (heroCta && stickyCta) {
+    var stickyIo = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          stickyCta.classList.remove('active');
+        } else {
+          stickyCta.classList.add('active');
+        }
+      });
+    }, { threshold: 0 });
+    stickyIo.observe(heroCta);
+  }
+});
+</script>
