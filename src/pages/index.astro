@@ -15,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="hero-eyebrow">Just got your lab results?</div>
         <h1>Your Diabetes Dietitian. <em>Covered by Insurance.</em></h1>
         <p class="hero-sub">$0 with most insurance. Medical Nutrition Therapy for diabetes is a covered benefit.</p>
-        <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+        <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="cta-btn">
           Check Your Insurance <span class="cta-arrow">&rarr;</span>
         </a>
         <div class="cta-micro">Takes 60 seconds &middot; No credit card required</div>
@@ -60,7 +60,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="stat-description">The American Diabetes Association recommends individualized Medical Nutrition Therapy delivered by a Registered Dietitian for everyone with type 2 diabetes. Your dietitian reviews your labs and builds a carb-distribution plan specific to your A1C level.</p>
         <p class="stat-source">ADA Standards of Care, 2026. Individual results may vary.</p>
         <div style="margin-top:32px">
-          <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+          <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="cta-btn">
             Check Your Insurance <span class="cta-arrow">&rarr;</span>
           </a>
         </div>
@@ -98,7 +98,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div style="text-align:center;margin-top:48px;">
-        <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+        <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="cta-btn">
           Check Your Insurance <span class="cta-arrow">&rarr;</span>
         </a>
         <div class="cta-micro">Takes 60 seconds &middot; No credit card required &middot; Most members pay $0</div>
@@ -260,7 +260,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="section-title">Your A1C. Your labs. Your plan.</div>
     <p class="section-body">Your RD reviews your labs and builds a plan around your A1C.</p>
     <p style="font-family:var(--body);font-size:15px;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:24px;">First sessions available this week.</p>
-    <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+    <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="cta-btn">
       Check Your Insurance <span class="cta-arrow">&rarr;</span>
     </a>
     <div class="cta-micro">Free to check &middot; No commitment &middot; Most members pay $0</div>
@@ -273,7 +273,7 @@ import Layout from "../layouts/Layout.astro";
 
   <!-- ===== MOBILE STICKY CTA ===== -->
   <div class="sticky-cta">
-    <a href="https://topnutritioncoaching.com/quiz" class="cta-btn">
+    <a href="https://www.topnutritioncoaching.com/quiz-insurance" class="cta-btn">
       Check Your Insurance <span class="cta-arrow">&rarr;</span>
     </a>
   </div>
@@ -510,6 +510,17 @@ main{margin-top:0!important}
 
 <script is:inline>
 document.addEventListener('DOMContentLoaded', function() {
+  // UTM passthrough: append current page query params to all CTA links
+  var qs = window.location.search;
+  if (qs) {
+    document.querySelectorAll('a.cta-btn').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && href.indexOf('quiz-insurance') !== -1) {
+        a.setAttribute('href', href + (href.indexOf('?') === -1 ? qs : '&' + qs.substring(1)));
+      }
+    });
+  }
+
   var io = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
       if (e.isIntersecting) {
