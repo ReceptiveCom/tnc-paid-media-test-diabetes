@@ -323,7 +323,7 @@ a { text-decoration: none; color: inherit; }
 .hero { background: var(--forest); overflow: hidden; }
 .hero-inner {
   max-width: 1200px; width: 100%;
-  margin: 0 auto; padding: 80px 40px 40px;
+  margin: 0 auto; padding: 120px 40px 40px;
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 32px; align-items: center;
 }
@@ -445,7 +445,7 @@ a { text-decoration: none; color: inherit; }
 .final-cta .cta-micro { color: rgba(255,255,255,.45); }
 
 /* ===== MOBILE STICKY CTA ===== */
-.sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-top: 1px solid var(--border); padding: 12px 20px; text-align: center; }
+.sticky-cta { display: none; position: fixed!important; bottom: 0!important; top: auto!important; left: 0!important; right: 0!important; z-index: 9999!important; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-top: 1px solid var(--border); padding: 12px 20px; text-align: center; }
 .sticky-cta .cta-btn { width: 100%; justify-content: center; padding: 16px 24px; font-size: 16px; }
 .sticky-cta { opacity: 0; transform: translateY(20px); transition: opacity .4s ease, transform .4s ease; }
 .sticky-cta.active { opacity: 1; transform: translateY(0); }
@@ -457,7 +457,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .hero h1 { font-size: 38px; }
-  .hero-inner { padding: 48px 24px 32px; grid-template-columns: 1fr; gap: 20px; }
+  .hero-inner { padding: 100px 24px 32px; grid-template-columns: 1fr; gap: 20px; }
   .hero-content { padding-bottom: 0; }
   .hero-image-wrap img { max-height: 380px; border-radius: 14px; object-fit: contain; }
   .hero-image-wrap { padding: 5px; border-radius: 18px; }
@@ -477,7 +477,7 @@ a { text-decoration: none; color: inherit; }
   .stat-number { font-size: 44px; }
 }
 @media (max-width: 640px) {
-  .hero-inner { padding: 40px 20px 28px; gap: 16px; }
+  .hero-inner { padding: 96px 20px 28px; gap: 16px; }
   .hero h1 { font-size: 32px; letter-spacing: -1px; }
   .hero-sub { font-size: 16px; margin-bottom: 20px; }
   .hero-image-wrap img { max-height: 340px; object-fit: contain; }
@@ -507,6 +507,8 @@ a { text-decoration: none; color: inherit; }
 blockquote{background:transparent!important;border:none!important;padding:0!important;margin:0!important}
 main{margin-top:0!important}
 .faq-item{display:block!important;background:transparent!important;padding:24px 0!important;border-radius:0!important;margin:0!important}
+.sticky-cta{position:fixed!important;bottom:0!important;top:auto!important}
+.sticky-cta.active{display:block!important}
 </style>
 
 <script is:inline>
