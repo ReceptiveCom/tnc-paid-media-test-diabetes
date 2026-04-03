@@ -14,6 +14,8 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <title>{title}</title>
+    <link rel="shortcut icon" href="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/66deedec2fcd9c66d433c74b_32x32.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/66deede6990be7b723c9ba37_256x256.png" />
     <link href="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/css/top-nutrition-coaching-new-template.shared.726d6f8dd.css" rel="stylesheet" />
     <slot name="head" />
     <style is:inline>
@@ -25,6 +27,84 @@ const { title } = Astro.props;
     <main>
       <slot />
     </main>
+    <slot name="after-main" />
+    <footer class="tnc-footer">
+      <div class="tnc-footer-cols">
+        <div class="tnc-footer-col">
+          <div class="tnc-footer-heading">Resources</div>
+          <a href="/blog">Nutrition resources</a>
+          <a href="/nutritionists-near-me">Find a nutritionists near you</a>
+          <a href="/testimonials">Testimonials</a>
+          <a href="/quiz-insurance">Health assessment</a>
+          <a href="/refer-to-us">Refer a patient</a>
+          <a href="/insurance">Insurance</a>
+          <a href="/consumer-health-data-policy">Consumer Health Data Policy</a>
+          <a href="/dietitian-jobs">How we recruit</a>
+          <div class="tnc-footer-heading" style="margin-top:24px;">Contact us</div>
+          <a href="mailto:support@topnutritioncoaching.com">support@topnutritioncoaching.com</a>
+        </div>
+        <div class="tnc-footer-col">
+          <div class="tnc-footer-heading">Find a dietitian by specialty</div>
+          <a href="/weight-loss-nutritionists">Weight loss</a>
+          <a href="/sports-nutritionists">Sports &amp; athletics</a>
+          <a href="/pediatric-nutritionists">Pediatric</a>
+          <a href="/pregnancy-nutritionists">Pregnancy</a>
+          <a href="/pregnancy-nutritionists">Prenatal &amp; postpartum</a>
+          <a href="/renal-nutritionists">Renal</a>
+          <a href="/diabetes-nutritionists">Diabetes</a>
+          <a href="/pcos-nutritionists">PCOS</a>
+          <a href="/gut-health-nutritionists">GI &amp; gut health</a>
+          <a href="/cancer-nutritionists">Cancer</a>
+          <a href="/specialties" class="tnc-footer-see-all">Explore All Specialties</a>
+        </div>
+        <div class="tnc-footer-col">
+          <div class="tnc-footer-heading">Find a dietitian by state</div>
+          <a href="/nutritionists-near-me/states-tx">Texas</a>
+          <a href="/nutritionists-near-me/states-ca">California</a>
+          <a href="/nutritionists-near-me/states-fl">Florida</a>
+          <a href="/nutritionists-near-me/states-ny">New York</a>
+          <a href="/nutritionists-near-me/states-pa">Pennsylvania</a>
+          <a href="/nutritionists-near-me/states-il">Illinois</a>
+          <a href="/nutritionists-near-me/states-oh">Ohio</a>
+          <a href="/nutritionists-near-me/states-ga">Georgia</a>
+          <a href="/nutritionists-near-me/states-nc">North Carolina</a>
+          <a href="/nutritionists-near-me/states-mi">Michigan</a>
+          <a href="/nutritionists-near-me/states" class="tnc-footer-see-all">See All States</a>
+        </div>
+        <div class="tnc-footer-col">
+          <div class="tnc-footer-heading">Find a dietitian by City</div>
+          <a href="/nutritionists-near-me/states-ny-new-york">New York City</a>
+          <a href="/nutritionists-near-me/states-ca-los-angeles">Los Angeles</a>
+          <a href="/nutritionists-near-me/states-il-chicago">Chicago</a>
+          <a href="/nutritionists-near-me/states-tx-houston">Houston</a>
+          <a href="/nutritionists-near-me/states-az-phoenix">Phoenix</a>
+          <a href="/nutritionists-near-me/states-pa-philadelphia">Philadelphia</a>
+          <a href="/nutritionists-near-me/states-tx-san-antonio">San Antonio</a>
+          <a href="/nutritionists-near-me/states-ca-san-diego">San Diego</a>
+          <a href="/nutritionists-near-me/states-tx-dallas">Dallas</a>
+          <a href="/nutritionists-near-me/states-fl-jacksonville">Jacksonville</a>
+          <a href="/nutritionists-near-me/cities" class="tnc-footer-see-all">See All Cities</a>
+        </div>
+        <div class="tnc-footer-col">
+          <div class="tnc-footer-heading">Find a dietitian by Insurance</div>
+          <a href="/insurance/blue-cross-blue-shield">Blue Cross Blue Shield</a>
+          <a href="/insurance/aetna">Aetna</a>
+          <a href="/insurance/cigna">Cigna</a>
+          <a href="/insurance/united-healthcare">United Healthcare</a>
+          <a href="/insurance/anthem">Anthem</a>
+          <a href="/insurance" class="tnc-footer-see-all">See All Insurance Plans</a>
+        </div>
+      </div>
+      <div class="tnc-footer-bottom">
+        <a href="https://www.topnutritioncoaching.com/" class="tnc-footer-logo">
+          <img src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/6703d9fe64c092cc8093fd59_Logo%20TNC.svg" alt="Top Nutrition Coaching" style="height:35px;filter:brightness(0) invert(1);" />
+        </a>
+        <div class="tnc-footer-copyright">&copy; Copyright Top Nutrition Coaching 2026, Owned By Thrive Health Holdings Inc</div>
+        <div class="tnc-footer-legal">
+          <a href="/privacy-policy">Privacy policy</a> | <a href="/terms-of-use">Terms of use</a> | <a href="/html-sitemap">Sitemap</a>
+        </div>
+      </div>
+    </footer>
     <script is:inline src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=626655ea8f0a3b341e18674a"></script>
     <script is:inline src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/js/top-nutrition-coaching-new-template.schunk.e0c428ff9737f919.js"></script>
     <script is:inline src="https://cdn.prod.website-files.com/626655ea8f0a3b341e18674a/js/top-nutrition-coaching-new-template.schunk.8f49cda2ca45c1d3.js"></script>
